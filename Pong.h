@@ -14,7 +14,7 @@
 typedef struct {
 	int x;
 	int y;
-	} vector;
+} vector;
 
 typedef struct {
 	vector position;
@@ -24,7 +24,5 @@ typedef struct {
 
 ball createball(int Posx, int Posy, int Velx, int Vely, char radius);
 ball moveball(ball ballmoved);
-
-
 
 #endif /* PONG_H_ */

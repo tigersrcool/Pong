@@ -7,8 +7,6 @@
 
 #include "Pong.h"
 
-
-
 ball createball(int Posx, int Posy, int Velx, int Vely, char radius) {
 	ball Kball;
 	Kball.position.x = Posx;
@@ -17,7 +15,7 @@ ball createball(int Posx, int Posy, int Velx, int Vely, char radius) {
 	Kball.velocity.y = Vely;
 	Kball.radius = radius;
 
-	return (Kball);
+	return Kball;
 }
 
 ball moveball(ball ballmoved){
@@ -40,6 +38,6 @@ ball moveball(ball ballmoved){
 		ballmoved.velocity.y = -ballmoved.velocity.y;
 	}
 
-	return (ballmoved);
+	return ballmoved;
 
 }
