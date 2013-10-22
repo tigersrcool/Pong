@@ -1,9 +1,6 @@
 #include <msp430.h> 
 #include "Pong.h"
-//some comment
-/*
- * main.c
- */
+
 int main(void) {
     WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
 
@@ -18,5 +15,5 @@ int main(void) {
     	KLball = moveball(KLball);
     }
 
-return 0;
+    return 0;
 }
